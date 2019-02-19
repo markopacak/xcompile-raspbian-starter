@@ -2,6 +2,8 @@
 
 A starter project for cross-compiling your C++ solution for Raspbian using CMake. Currently WIP.
 
+This guide aims to make things as automatic and easy as possible, yet you will still need to do some steps in order to have a fully functioning working envirnoment.
+
 
 ## 1) Why? And why not Docker?
 
@@ -38,9 +40,31 @@ You need:
 
     This will download the entire PI tools including the compilers you need.
 
+    Watch out: it's almost 2 Gb, so it might take a while to download all of it.
+
 4) The `usr` and `lib` folders from a Raspberry PI
 
-    This is now the boring part. TODO here
+    This is now the boring part. You need to download the `usr` and `lib` from your Raspberry and place them inside the `x-tools/pi/` folder.
+
+    That's going to take a while. The `usr` folder is somewhere around 1Gb.
+
+    The `x-tools/pi/` folder should now look something like this:
+
+        project-root/
+            ...
+            x-tools/
+                armv7l.cmake   
+                pi/
+                    tools/
+                        ...
+                    usr/
+                        ...
+                    lib/
+                        ...
+
+    The content of `x-tools/pi` is *gitignored* by default, so you won't be committing gigas and gigas of files.
+
+
  
 ## 3) How do I compile my solution?
 
