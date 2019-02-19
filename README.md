@@ -13,15 +13,22 @@ At such point, this starter project might be helpful for you.
 
 It simply compiles your C++ application for 64bit Linux and for the 32bit PI version. At the end you will have two compiled solutions in the `build` folder:
 
-- application-armv7l  (PI version)
-- application-x86_64  (standard Linux version)
+- application-armv7l  *(PI version)*
+- application-x86_64  *(standard Linux version)*
 
 ## 2) What dependencies do I need? 
 
 You need:
 
-- CMake 3.11+ (`apt-get install cmake`)
+- CMake 3.11+
 
+        apt-get install cmake
+
+- 32-bits libraries
+
+        apt-get install lib32z1
+
+- A raspbian compiler (follow instructions below)
 
 ## 3) How do I compile my solution?
 
