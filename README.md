@@ -20,16 +20,28 @@ It simply compiles your C++ application for 64bit Linux and for the 32bit PI ver
 
 You need:
 
-- CMake 3.11+
+1) CMake 3.11+
 
         apt-get install cmake
 
-- 32-bits libraries
+2) 32-bits libraries
 
         apt-get install lib32z1
 
-- A raspbian compiler (follow instructions below)
+3) A raspbian compiler (follow instructions below)
 
+    Create a folder named `pi` inside the `x-tools` folder.
+
+    Now, `cd pi` and then run
+
+        git clone git://github.com/raspberrypi/tools.git
+
+    This will download the entire PI tools including the compilers you need.
+
+4) The `usr` and `lib` folders from a Raspberry PI
+
+    This is now the boring part. TODO here
+ 
 ## 3) How do I compile my solution?
 
 By running:
