@@ -2,14 +2,14 @@
 
 A starter project for cross-compiling your C++ solution for Raspbian using CMake. Currently WIP.
 
-This guide aims to make things as automatic and easy as possible, yet you will still need to do some steps in order to have a fully functioning working envirnoment.
+This guide aims to make things as automatic and easy as possible. You still need to go through some steps in order to have a fully functioning working envirnoment.
 
 
 ## 1) Why? And why not Docker?
 
-If you can use `Docker` then go ahead. There might be situations though, where for many reasons, you are not allowed to install `Docker` on your Raspberry PI. 
+If you can use `Docker` then go ahead. There might be situations though, where for some reason you are not allowed to install `Docker` on your Pi. 
 
-At such point, this starter project might be helpful for you.
+At such point this starter project can be helpful for you.
 
 ## 2) What does it do?
 
